@@ -15,23 +15,23 @@ function App() {
     setPercentage(newNumber);
     setLoading(false);
 
-    if (percentage <= 10) {
+    if (newNumber <= 10) {
       setResult(
         `Hmm, it seems like there's a bit of distance between ${yourName} and ${crushName}. Keep your hopes high, miracles happen!`
       );
-    } else if (percentage <= 35) {
+    } else if (newNumber < 35) {
       setResult(
         `Well, ${yourName}, there's some potential spark between you and ${crushName}. Don't hesitate to make a move and see where it leads!`
       );
-    } else if (percentage <= 65) {
+    } else if (newNumber < 65) {
       setResult(
         `Looks like there's a good chance for love to blossom between ${yourName} and ${crushName}! Take the initiative and see where this journey takes you both!`
       );
-    } else if (percentage <= 85) {
+    } else if (newNumber < 85) {
       setResult(
         `Wow! With such a high percentage, it's clear that there's a strong connection between ${yourName} and ${crushName}. Don't hold back, seize the moment!`
       );
-    } else if (percentage <= 100) {
+    } else if (newNumber < 100) {
       setResult(
         `Congratulations, ${yourName}! You and ${crushName} are a match made in heaven! It's time to celebrate and embrace this beautiful connection!`
       );
@@ -40,7 +40,7 @@ function App() {
   return (
     <main className="flex flex-col gap-y-5 items-center justify-center w-full h-screen">
       <div>
-        <h1 className="font-custom italic text-center text-4xl text-[#e85c8b] font-bold">
+        <h1 className="font-custom italic text-center text-2xl lg:text-4xl text-[#e85c8b] font-bold">
           Tiny-Love Calculator
         </h1>
         <form
@@ -82,8 +82,8 @@ function App() {
           {percentage}%
         </h1>
       </div>
-      <div className="text-center mt-5 w-[95%]">
-        <p className="font-custom font-medium italic text-[#e85c8b] text-xl">
+      <div className="text-center mt-5 w-[90%]">
+        <p className="font-custom font-medium italic text-[#e85c8b] text-sm lg:text-xl">
           {result}
         </p>
       </div>
