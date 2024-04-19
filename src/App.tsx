@@ -38,7 +38,7 @@ function App() {
     }
   };
   return (
-    <main className="flex flex-col gap-y-5 items-center justify-center w-full h-screen">
+    <main className="flex flex-col gap-y-5 items-center justify-center w-full h-full my-10">
       <div>
         <h1 className="font-custom italic text-center text-2xl lg:text-4xl text-[#e85c8b] font-bold">
           Tiny-Love Calculator
